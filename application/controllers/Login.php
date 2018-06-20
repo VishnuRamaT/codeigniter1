@@ -39,7 +39,6 @@ class Login extends CI_Controller {
                         $this->session->set_userdata('USER_SESSION', 'active');
                         
                         redirect(base_url('login/after'));
-                       // $this->load->view('after_login');
                 }
                  else if($user!=null && $pass!=null)
                  $list['msg']=  "Invalid username or password";
