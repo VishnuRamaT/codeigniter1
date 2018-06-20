@@ -113,7 +113,7 @@ public function insert()
                         $this->session->set_userdata('msg', 'Password Changed!');
                         $this->login_model->updatedata($data,$val);
                         
-                        //redirect(base_url('test/showdata'));
+                        
                     }
                     else
                     $this->session->set_userdata('msg', 'password doesnt match!');
